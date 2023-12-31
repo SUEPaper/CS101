@@ -1,0 +1,58 @@
+site_name: C++程序设计
+site_author: 纸上得来总觉浅
+repo_url: https://github.com/SUEPaper/cs101
+theme:
+  name: "material"
+  language: "zh"
+  font: false
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - 预学习:
+    - index.md
+  - 基础设施安装:
+    - install/index.md
+    - Windows环境搭建: install/wsl.md
+    - Ubuntu环境搭建: install/ubuntu.md
+    - MacOS环境搭建: install/macos.md
+  - Linux命令行基础:
+    - linux/index.md
+  - Git教程:
+    - git/index.md
+  - VSCode搭建C++开发环境: vscode.md
+  - C++程序设计:
+    - cpp/index.md
+  - 课程实验:
+    - lab/index.md
