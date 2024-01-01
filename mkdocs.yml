@@ -1,6 +1,8 @@
-site_name: C++程序设计
+site_name: C++面向对象程序设计
 site_author: 纸上得来总觉浅
 repo_url: https://github.com/SUEPaper/cs101
+copyright: 上海电力大学数理学院纸上得来终觉浅团队撰写，本文档以 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans">CC BY-SA 4.0 license</a> 协议发布。
+
 theme:
   name: "material"
   language: "zh"
@@ -31,27 +33,38 @@ theme:
     - navigation.tracking
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.keys
   - pymdownx.superfences
+  - markdown.extensions.def_list
+  - toc:
+      permalink: true
 
 nav:
   - 预学习:
     - index.md
-  - 基础设施安装:
+  - 开发环境搭建:
     - install/index.md
     - Windows环境搭建: install/wsl.md
     - Ubuntu环境搭建: install/ubuntu.md
     - MacOS环境搭建: install/macos.md
-  - Linux命令行基础:
+  - Linux基础:
     - linux/index.md
+    - 基础命令: linux/basic.md
+    - 文件和文件夹操作: linux/file.md
   - Git教程:
     - git/index.md
+    - git基础命令: git/basic.md
+    - Github教程: git/github.md
   - VSCode搭建C++开发环境: vscode.md
+  - CMake基础: cmake.md
   - C++程序设计:
     - cpp/index.md
   - 课程实验:
