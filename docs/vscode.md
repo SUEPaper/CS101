@@ -93,7 +93,8 @@ code .
 
 ## 配置一个工程项目
 
-在开始这一部分的教程时，请先阅读 [CMake基础](./cmake.md) 的教程，了解基础的cmake知识。
+在开始这一部分的教程时，请先阅读 [CMake基础](./cmake.md) 的教程，了解基础的cmake知识，
+同时阅读 [Linux文件和文件夹操作](./linux/file.md)的教程，接下来我们需要用到一些Linux的基础命令。
 
 
 ## VS Code Debug C++ 程序

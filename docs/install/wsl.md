@@ -162,7 +162,7 @@ EOF"
 请在命令行中输入如下命令：
 
 ```bash
-sudo apt install -y build-essential gdb cmake git
+sudo apt install -y build-essential gdb cmake git clangd
 ```
 你还会遇到让你用户密码的情况，此时请输入之前配置的用户密码，即可执行之前输入的命令行。
 
